@@ -6,7 +6,7 @@ tell application "Safari"
     open location url
 end tell
 
-delay 5
+delay 500
 
 tell application "System Events"
     keystroke (ASCII character 9) using {command down} -- Simula TAB
@@ -16,6 +16,6 @@ tell application "System Events"
     keystroke return -- Simula ENTER
 end tell
 
-delay 1
+delay 100
 
 tell application "Safari" to close window 1
